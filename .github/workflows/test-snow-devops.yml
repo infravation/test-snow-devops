@@ -8,6 +8,11 @@ jobs:
       name: RaiseChange
       runs-on: ubuntu-latest
       steps:     
+
+        - name: sleep
+          run: |
+            sleep 300;
+            
         - name: ServiceNow Change
           uses: ServiceNow/servicenow-devops-change@v6.0.0
           id: create
